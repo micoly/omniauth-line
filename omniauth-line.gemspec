@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.summary     = s.description
   s.license     = "MIT"
 
-  spec.files         = `git ls-files -z`.split("\x0").reject do |f|
+  s.files         = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})
   end
   spec.bindir        = "exe"
